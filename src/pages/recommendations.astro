@@ -1,0 +1,677 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="推薦資源 - 個人網站" description="精選書籍與學習資源推薦">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 gradient-bg">
+    <!-- Starry background -->
+    <div class="starry-space">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+        >
+          推薦資源
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          在學習與開發的路上，我從許多優質的資源中獲益良多。這裡分享我親自整理與實際使用過的開發工具、學習網站、AI
+          提示詞模板與流程工具，希望也能幫助到你。 持續更新中，歡迎交流與補充！
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推薦書籍 -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+        >
+          📚 推薦書籍
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          這一區收錄了對我影響深刻的書籍，並簡單分享我的閱讀收穫。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 書籍 1: Code Complete -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials1.png"
+              alt="Code Complete：軟體建構實務指南"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              Code Complete：軟體建構實務指南
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：Steve McConnell
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              程式設計經典，內容涵蓋軟體建構的原則、最佳實踐與大量範例，幫助初學者建立正確的程式設計觀念與寫出高品質程式碼。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >基礎入門</span
+              >
+              <span
+                class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >問題解決</span
+              >
+              <span
+                class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >邏輯思維</span
+              >
+            </div>
+            <a
+              href="#"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              博客來 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 書籍 2: 像程式設計師一樣思考 -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials2.png"
+              alt="像程式設計師一樣思考：創意解決問題簡介"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              像程式設計師一樣思考：創意解決問題簡介
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：V. Anton Spraul 著 H&C 譯
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              強調邏輯思維與問題解決技巧，適合剛入門者學習如何用程式設計的方式思考並解決實際問題。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >基礎入門</span
+              >
+              <span
+                class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >問題解決</span
+              >
+              <span
+                class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >邏輯思維</span
+              >
+            </div>
+            <a
+              href="https://www.tenlong.com.tw/products/9789865025342"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              天瓏書店 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 書籍 3: Clean Code -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials3.png"
+              alt="Clean Code 無瑕的程式碼：敏捷軟體開發技巧守則"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              Clean Code 無瑕的程式碼：敏捷軟體開發技巧守則
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：Robert C. Martin
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              深入探討如何撰寫可維護、可讀性高的程式碼，是進階工程師必讀，強調程式碼品質與團隊協作。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >進階提升</span
+              >
+              <span
+                class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >程式碼品質</span
+              >
+              <span
+                class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >軟體工程</span
+              >
+            </div>
+            <a
+              href="https://www.books.com.tw/products/0010579897?srsltid=AfmBOoo6oOrDEQAc6LWIIvWpyJYWTEA67GtPvASYFKDxdk-JKsXRmr2i"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              博客來 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 書籍 4: The Pragmatic Programmer -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials4.png"
+              alt="The Pragmatic Programmer：務實的程式設計師"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              The Pragmatic Programmer：務實的程式設計師
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：David Thomas, Andrew Hunt 著 張靜雯 譯
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              涵蓋軟體開發的實用建議與最佳實踐，幫助程式設計師從技術與職場層面全面成長，提升專業素養。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >進階提升</span
+              >
+              <span
+                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >職涯發展</span
+              >
+              <span
+                class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >軟體開發實務</span
+              >
+            </div>
+            <a
+              href="https://www.tenlong.com.tw/products/9789865022754"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              天瓏書店 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 書籍 5: 資料結構 -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials5.png"
+              alt="資料結構"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              資料結構
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：戴顯權
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              以簡明的方式介紹各種資料結構（如陣列、鏈結串列、堆疊、佇列、樹、圖等），並配合
+              C 語言範例與實用習題，適合初學者與進階者打好資料結構基礎。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900 text-cyan-800 dark:text-cyan-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >資料結構</span
+              >
+              <span
+                class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >演算法基礎</span
+              >
+              <span
+                class="px-3 py-1 bg-lime-100 dark:bg-lime-900 text-lime-800 dark:text-lime-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >學術教材</span
+              >
+            </div>
+            <a
+              href="https://www.tenlong.com.tw/products/9789863630463"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              天瓏書店 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 書籍 6: 我可能錯了 -->
+        <div
+          class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-[3/4] bg-white">
+            <img
+              src="/testimonials6.png"
+              alt="我可能錯了：森林智者的最後一堂人生課"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              我可能錯了：森林智者的最後一堂人生課
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+              作者：比約恩．納提科．林德布勞
+            </p>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              瑞典最暢銷的心靈成長書籍，作者以自身經歷分享如何面對人生困境、學會謙卑與自省，適合程式設計師在學習與職涯路上獲得心靈力量。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-3 py-1 bg-rose-100 dark:bg-rose-900 text-rose-800 dark:text-rose-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >勵志成長</span
+              >
+              <span
+                class="px-3 py-1 bg-violet-100 dark:bg-violet-900 text-violet-800 dark:text-violet-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >心靈啟發</span
+              >
+              <span
+                class="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >人生觀點</span
+              >
+            </div>
+            <a
+              href="https://www.openedu.tw/course?id=1144"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              博客來 僅供參考，亦可於其他書店購買
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推薦課程和影片 -->
+  <section class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+        >
+          📺 推薦課程和影片
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          精選優質的線上課程與影片資源，幫助你在技術學習路上更進一步。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 課程 1: Python 程式設計入門 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-video">
+            <img
+              src="/course1.jpg"
+              alt="Python 程式設計入門"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">
+              Python 程式設計入門（中華開放教育平臺）
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              內容淺顯易懂，適合零基礎學員，涵蓋 Python
+              語法、邏輯思維與實作練習，結合生活化範例，提升學習興趣。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >免費課程</span
+              >
+              <span
+                class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >Python</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >基礎入門</span
+              >
+            </div>
+            <a
+              href="https://www.openedu.tw/course?id=1144"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              查看課程
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 課程 2: C/C++基礎程式設計 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-video">
+            <img
+              src="/course2.png"
+              alt="C/C++基礎程式設計"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">
+              C/C++基礎程式設計（臺灣大學資訊系統訓練班）
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              由臺大資訓班專業講師授課，從 C 語言基礎到
+              C++物件導向觀念，理論與實作並重，適合想打好程式基礎的初學者。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >C/C++</span
+              >
+              <span
+                class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >基礎入門</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >線上課程</span
+              >
+              <span
+                class="px-2 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >付費</span
+              >
+            </div>
+            <a
+              href="https://train.csie.ntu.edu.tw/train/course.php?id=5054"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              查看課程
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 影片 3: 當幸福來敲門 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-video">
+            <img
+              src="/movie1.jpg"
+              alt="當幸福來敲門"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">
+              當幸福來敲門（The Pursuit of Happyness）
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              威爾·史密斯主演，改編自真實人物克里斯·賈納的奮鬥故事，描繪主角在逆境中不放棄、努力追求幸福的歷程，是經典勵志電影。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >真實故事</span
+              >
+              <span
+                class="px-2 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >親情</span
+              >
+              <span
+                class="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >堅持夢想</span
+              >
+              <span
+                class="px-2 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >超級推薦</span
+              >
+            </div>
+            <a
+              href="https://zh.wikipedia.org/zh-tw/%E7%95%B6%E5%B9%B8%E7%A6%8F%E4%BE%86%E6%95%B2%E9%96%80"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              詳細內容
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 影片 4: 夢想越野隊 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 magic-card card-3d"
+        >
+          <div class="aspect-video">
+            <img
+              src="/movie2.png"
+              alt="夢想越野隊"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">
+              夢想越野隊（The Ride／Onward）
+            </h3>
+            <p
+              class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed"
+            >
+              是一部根據真實故事改編的運動勵志電影，描述一位失意教練帶領加州麥克法蘭高中的七名墨西哥裔學生，克服生活困難，組成越野跑隊並勇奪州冠軍的歷程。這部電影展現了團隊精神、堅持夢想與改變命運的力量。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >夢想</span
+              >
+              <span
+                class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >成長</span
+              >
+              <span
+                class="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >突破困境</span
+              >
+              <span
+                class="px-2 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full hover:scale-105 transition-transform duration-200"
+                >超級推薦</span
+              >
+            </div>
+            <a
+              href="https://zh.wikipedia.org/zh-tw/%E9%BA%A5%E5%85%8B%E6%B3%95%E5%85%B0"
+              class="inline-flex items-center text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500 text-violet-700 dark:text-yellow-500"
+              target="_blank"
+            >
+              詳細內容
+              <svg
+                class="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

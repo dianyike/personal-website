@@ -1,0 +1,36 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+# ====================== 第一部分：嚴格排除（高優先順序）======================
+# 虛擬環境 - 使用絕對路徑和相對路徑雙重保證
+**/site-packages/**/*
+app/.pytest_cache/**/*
+D:/AIpython/server/.pytest_cache/**/*
+app/python-sdk-1.5.0/**/*
+D:/AIpython/server/python-sdk-1.5.0/**/*
+app/Qwen-Agent-main/**/*
+D:/AIpython/server/Qwen-Agent-main/**/*
+app/redis-6.0.0/**/*
+D:/AIpython/server/redis-6.0.0/**/*
+
+# ====================== 第二部分：通用排除 ======================
+# Python快取
+**/__pycache__/**/*
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/**/*
+
+# 開發工具和臨時檔案
+.git/**/*
+.idea/**/*
+.vscode/**/*
+**/.DS_Store
+**/*.swp
+**/*.swo
+**/*.bak
+**/*.tmp
+
+# ====================== 第三部分：強制包含（最高優先順序）======================
+# 後端原始碼 - 明確指定目錄
+
+!D:/AIpython/server/src/**/*.py
+!app/src/**/*.py

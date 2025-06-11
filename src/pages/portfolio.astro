@@ -1,0 +1,629 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="作品集 - 個人網站" description="展示我的代表性專案與技術實現">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 gradient-bg">
+    <!-- Starry background -->
+    <div class="starry-space">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+        >
+          作品集
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          這裡收錄了我實作與創意的結晶，包含前後端專案、互動應用與遊戲開發。每一個作品背後，都是我對技術與設計的探索。
+          點擊進入，看看我如何將靈感化為功能、讓程式語言說故事。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品展示 -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 作品 1: 電商平台 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio1.png"
+                alt="電商平台"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  Full Stack
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                電商平台
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                預計 6/14 開放展示（Vue + Spring
+                Boot）前後端分離架構，實作商品管理、購物車、會員系統與金流串接功能。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-sm rounded-full"
+                  >Spring Boot</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >MySQL</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full"
+                  >電商</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl pulse-glow"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap"
+                >
+                  <svg
+                    class="w-5 h-5 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    ></path>
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 2: 桌面寵物小工具 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio2.png"
+                alt="桌面寵物小工具"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  Desktop App
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                桌面寵物小工具
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                （Python +
+                PySide6）開發互動式桌面寵物程式，支援自訂外觀、動態反饋與輕量資源管理。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >PySide6</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-sm rounded-full"
+                  >互動程式</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full"
+                  >桌面應用</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl pulse-glow"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                    ></path>
+                  </svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 3: 桌面待辦清單 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio3.png"
+                alt="桌面待辦清單"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  GUI Tool
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                桌面待辦清單
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                (Python + Tkinter) 簡易 GUI
+                工具，具備任務管理、優先級標記與資料本地儲存功能。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full"
+                  >Tkinter</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full"
+                  >任務管理</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >生產力工具</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/dianyike/Todo-Desktop"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl pulse-glow"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="https://github.com/dianyike/Todo-Desktop/archive/refs/heads/main.zip"
+                  class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
+                    ></path>
+                  </svg>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 4: LeetCode 解題 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio4.png"
+                alt="LeetCode 解題"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  Algorithm
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                LeetCode 解題
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                （Python/C++/JavaScript）
+                解題紀錄目前尚未開始，但我計劃近期投入並持續更新，歡迎日後回來查看我的學習進度。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >C++</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-sm rounded-full"
+                  >演算法</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full"
+                  >資料結構</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/dianyike/LeetCode_dianyike"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl pulse-glow"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="https://leetcode.cn/u/dianyike1013/"
+                  class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    ></path>
+                  </svg>
+                  LeetCode
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 5: 銀行即時匯率 LINE Bot -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio5.png"
+                alt="銀行即時匯率 LINE Bot"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  LINE Bot
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                銀行即時匯率
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-2 leading-relaxed">
+                整合即時匯率 API 與 LINE 訊息推送，搭配 PWA
+                網頁提供跨平台查詢服務。
+              </p>
+              <p class="text-red-500 mb-2 ml-6 text-lg">
+                不開源專案有敏感資訊，暫不提供
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full"
+                  >Python</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-sm rounded-full"
+                  >Flask</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full"
+                  >LINE API</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >PWA</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-sm rounded-full"
+                  >金融API</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl opacity-50 cursor-not-allowed pulse-glow"
+                  onclick="return false;"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="https://linefx-bot.vercel.app/dashboard"
+                  class="inline-flex items-center px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="w-5 h-5 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    ></path>
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 6: 獨立遊戲《幻命之境》 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="relative">
+              <img
+                src="/Portfolio6.png"
+                alt="獨立遊戲《幻命之境》"
+                class="w-auto h-auto object-cover"
+              />
+              <div class="absolute top-4 right-4">
+                <span
+                  class="tag-hover bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium"
+                >
+                  Game Dev
+                </span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                獨立遊戲《幻命之境》（Unity）
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                使用 Unity 開發 2D
+                橫向卷軸遊戲，實作角色操控、關卡設計與劇情互動系統。
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="tag-hover px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full"
+                  >Unity</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                  >C#</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-sm rounded-full"
+                  >遊戲開發</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full"
+                  >2D遊戲</span
+                >
+                <span
+                  class="tag-hover px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full"
+                  >獨立開發</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl opacity-50 cursor-not-allowed pulse-glow"
+                  onclick="return false;"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                  開發中
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-6 py-3 border-2 border-gray-400 text-gray-400 font-bold rounded-lg opacity-50 cursor-not-allowed"
+                  onclick="return false;"
+                >
+                  <svg
+                    class="w-6 h-6 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                  敬請期待
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 更多項目提示 -->
+        <div class="card-3d">
+          <div
+            class="card-3d-inner magic-card bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-dashed border-primary-300 dark:border-primary-700 text-center transition-all duration-500 hover:shadow-2xl"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center float-animation"
+              >
+                <svg
+                  class="w-8 h-8 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              更多專案開發中...
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">
+              持續學習新技術，創造更多有趣的專案。敬請期待！
+            </p>
+            <a
+              href="/contact"
+              class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl pulse-glow"
+            >
+              聯繫我討論合作
+              <svg
+                class="ml-2 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

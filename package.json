@@ -1,0 +1,32 @@
+{
+  "name": "personal-website",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "現代化個人網站 - 使用 Astro + TypeScript + Tailwind CSS 打造，支援深色模式與豐富動畫效果",
+  "author": "dianyike",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.0.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/check": "^0.5.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1",
+    "lucide-react": "^0.454.0",
+    "@types/node": "^20.11.0"
+  }
+}
+
+
+
+
+

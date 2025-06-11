@@ -1,0 +1,357 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="聯絡我 - 個人網站" description="與我聯絡，討論技術或合作機會">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 gradient-bg">
+    <!-- Starry background -->
+    <div class="starry-space">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+        >
+          聯絡我
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          無論你是對我的作品有興趣、想一起合作，還是單純聊聊開發、遊戲、AI
+          應用，都歡迎透過以下方式聯絡我。
+          我樂於結識志同道合的夥伴，一起創造更多可能！
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡內容 -->
+  <section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- 聯絡表單 -->
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8">
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            傳送訊息
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300 mb-8">
+            如有任何問題或合作想法，歡迎隨時聯絡我，我會盡快回覆，期待與您交流！
+          </p>
+
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="space-y-6"
+          >
+            <!-- Honeypot 防護欄位 (隱藏) -->
+            <div style="display: none;">
+              <label
+                >Don't fill this out if you're human: <input
+                  name="bot-field"
+                /></label
+              >
+            </div>
+
+            <!-- 隱藏的form-name欄位 -->
+            <input type="hidden" name="form-name" value="contact" />
+
+            <!-- 姓名 -->
+            <div>
+              <label
+                for="name"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              >
+                姓名
+                <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                placeholder="請輸入您的姓名"
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              >
+                Email
+                <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <!-- 主旨 -->
+            <div>
+              <label
+                for="subject"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              >
+                主旨
+                <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
+                placeholder="想要討論的主題"
+              />
+            </div>
+
+            <!-- 訊息內容 -->
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              >
+                訊息內容
+                <span class="text-red-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors resize-none"
+                placeholder="請詳細描述您想要討論或合作的內容..."></textarea>
+            </div>
+
+            <!-- 提交按鈕 -->
+            <button
+              type="submit"
+              class="w-full px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            >
+              傳送訊息
+            </button>
+          </form>
+        </div>
+
+        <!-- 聯絡資訊 -->
+        <div class="space-y-8">
+          <!-- 聯絡方式 -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              其他聯絡方式
+            </h2>
+
+            <div class="space-y-4">
+              <!-- Email -->
+              <div
+                class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg"
+              >
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                  >
+                    Email
+                  </h3>
+                  <a
+                    href="mailto:dianyike1013@gmail.com"
+                    class="text-primary-600 dark:text-primary-400 hover:underline"
+                  >
+                    dianyike1013@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div
+                class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg"
+              >
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-600 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="text-lg font-semibold text-gray-900 dark:text-white"
+                  >
+                    GitHub
+                  </h3>
+                  <a
+                    href="https://github.com/dianyike"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary-600 dark:text-primary-400 hover:underline"
+                  >
+                    github.com/dianyike
+                  </a>
+                </div>
+              </div>
+
+              <!-- 預留社群連結位置 -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div
+                  class="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-600"
+                >
+                  <div
+                    class="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full mb-2"
+                  >
+                  </div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >待新增</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-600"
+                >
+                  <div
+                    class="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full mb-2"
+                  >
+                  </div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >待新增</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-600"
+                >
+                  <div
+                    class="w-8 h-8 bg-gray-300 dark:bg-gray-600 rounded-full mb-2"
+                  >
+                  </div>
+                  <span class="text-sm text-gray-500 dark:text-gray-400"
+                    >待新增</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 常見問題 -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              常見問題
+            </h2>
+
+            <div class="space-y-4">
+              <!-- FAQ 1 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+                <h3
+                  class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+                >
+                  Q:為什麼沒有FaceBook、Instagram等社群連結？
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  A:目前我的 Facebook 和 Instagram
+                  帳號暫時無法使用，正在積極協助恢復中，恢復後會盡快補上相關連結，感謝您的理解與耐心等待。
+                </p>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+                <h3
+                  class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+                >
+                  Q:為什麼帳號無法使用？
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  A:近期帳號遇到安全問題，正在加強保護並申請恢復中。未來會更加留意帳號安全，避免類似情況再次發生。感謝您的關心！
+                </p>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+                <h3
+                  class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+                >
+                  Q:為什麼沒有提供電話聯絡方式？
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  A:為了避免接收到不必要的廣告或騷擾電話，目前僅提供電子郵件與社群媒體作為主要聯絡方式。如果您有正式合作或面試需求，歡迎來信聯絡，我會視情況提供電話號碼，並安排進一步的聯絡。感謝您的理解與配合！
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 回應時間說明 -->
+          <div
+            class="bg-gradient-to-r from-blue-50 to-primary-50 dark:from-blue-900/20 dark:to-primary-900/20 rounded-lg p-6"
+          >
+            <div class="flex items-start space-x-4">
+              <div class="flex-shrink-0">
+                <svg
+                  class="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3
+                  class="text-lg font-semibold text-gray-900 dark:text-white mb-2"
+                >
+                  回應時間
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                  平日 10:30 至 00:00
+                  聯絡我，通常可於一小時內收到回覆；其他時段的來信將於下一個工作日回覆。若遇假日，回覆時間可能會稍有延遲，敬請見諒。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

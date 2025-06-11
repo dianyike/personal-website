@@ -1,0 +1,385 @@
+/* Global CSS for special effects */
+
+/* Navigation Link Effects */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+}
+
+/* Starry Background */
+.gradient-bg {
+  background: linear-gradient(135deg, #FFFDE7 0%, #F5F5F5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .gradient-bg {
+  background: linear-gradient(135deg, #373B44 0%, #6a3093 100%);
+}
+
+/* Theme Toggle Wave Effect */
+.theme-wave {
+  position: fixed;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, rgba(102, 126, 234, 0.1) 50%, transparent 70%);
+  transform: scale(0);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-wave.active {
+  transform: scale(100);
+}
+
+.dark .theme-wave {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, rgba(168, 85, 247, 0.1) 50%, transparent 70%);
+}
+
+/* Magic Card Effect */
+.magic-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  transition: all 0.5s ease;
+}
+
+.magic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.8s ease;
+  z-index: 1;
+}
+
+.magic-card:hover::before {
+  left: 100%;
+}
+
+.magic-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 10px 20px rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+/* 3D Card Effect */
+.card-3d {
+  perspective: 1500px;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-3d:hover {
+  transform: rotateY(8deg) rotateX(3deg) scale(1.05);
+}
+
+.card-3d-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  backface-visibility: hidden;
+}
+
+.card-3d:hover .card-3d-inner {
+  transform: translateZ(30px) rotateY(-2deg);
+}
+
+/* Enhanced Tag Hover Effects */
+.tag-hover {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.tag-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.tag-hover:hover::before {
+  left: 100%;
+}
+
+.tag-hover:hover {
+  transform: scale(1.15) translateY(-3px) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4), 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pulse Effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Glass Morphism Effect */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-morphism-dark {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+}
+
+/* Neon Border Effect */
+.neon-border {
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #667eea, #764ba2) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(102, 126, 234, 0.5) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.8);
+}
+
+/* Smooth Transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, 
+              text-decoration-color 0.2s ease, fill 0.2s ease, stroke 0.2s ease;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .card-3d:hover {
+    transform: none;
+  }
+  
+  .magic-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .tag-hover:hover {
+    transform: scale(1.05) translateY(-1px);
+  }
+}
+
+/* Starry Sky Effect */
+.starry-space {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+/* Light mode stars - blue */
+.star {
+  background: radial-gradient(3px 3px at 10px 10px, #2563eb, rgba(37, 99, 235, 0.8), rgba(37, 99, 235, 0));
+  background-size: 20px 20px;
+}
+
+/* Dark mode stars - white */
+.dark .star {
+  background: radial-gradient(3px 3px at 10px 10px, #ffffff, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background-size: 20px 20px;
+}
+
+/* Star animations with different delays and positions */
+.star:nth-child(1) {
+  background-position: 10% 90%;
+  animation-delay: 0s;
+  top: 20%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+}
+
+.star:nth-child(2) {
+  background-position: 20% 50%;
+  background-size: 270px 500px;
+  animation-delay: 0.3s;
+  top: 40%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+}
+
+.star:nth-child(3) {
+  background-position: -20% -30%;
+  transform: rotate(60deg);
+  animation-delay: 2.5s;
+  top: 80%;
+  right: 25%;
+  width: 90px;
+  height: 90px;
+}
+
+.star:nth-child(5) {
+  background-image: radial-gradient(3px 3px at 10px 10px, #2563eb, rgba(37, 99, 235, 0.8), rgba(37, 99, 235, 0)), radial-gradient(3px 3px at 80px 30px, #6366f1, rgba(99, 102, 241, 0.7), rgba(99, 102, 241, 0));
+  background-position: 80% 30%;
+  animation-delay: 4s;
+  top: 15%;
+  right: 35%;
+  width: 120px;
+  height: 120px;
+}
+
+.star:nth-child(6) {
+  background-position: 50% 20%;
+  animation-delay: 6s;
+  top: 75%;
+  left: 5%;
+  width: 70px;
+  height: 70px;
+}
+
+.star:nth-child(7) {
+  background-position: 30% 70%;
+  animation-delay: 1.8s;
+  top: 25%;
+  right: 8%;
+  width: 65px;
+  height: 65px;
+}
+
+.star:nth-child(8) {
+  background-position: 60% 40%;
+  animation-delay: 3.2s;
+  top: 85%;
+  right: 12%;
+  width: 75px;
+  height: 75px;
+}
+
+/* Dark mode adjustments for star 5 */
+.dark .star:nth-child(5) {
+  background-image: radial-gradient(3px 3px at 10px 10px, #ffffff, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), radial-gradient(3px 3px at 80px 30px, #f1f5f9, rgba(241, 245, 249, 0.8), rgba(241, 245, 249, 0));
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.9;
+    transform: scale(1.15);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+ 

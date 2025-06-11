@@ -1,0 +1,375 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="關於我 - 個人網站" description="了解我的背景、技能和開發經歷">
+  <Navbar />
+
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 gradient-bg">
+    <!-- Starry background -->
+    <div class="starry-space">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+        >
+          關於我
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          這裡記錄了我的學習過程、專案經驗和個人成長，歡迎一同探索我的成長足跡！
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 個人簡介 -->
+  <section class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <!-- 個人照片區域 -->
+        <div class="lg:col-span-1">
+          <div class="relative">
+            <div
+              class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
+            >
+              <img
+                src="/Headsticker.png"
+                alt="柯典億個人照片"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 個人介紹文字 -->
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            個人介紹
+          </h2>
+
+          <div class="space-y-4 text-gray-600 dark:text-gray-300">
+            <p class="text-lg leading-relaxed">
+              中信金融管理學院人工智慧學系畢業。
+            </p>
+
+            <p class="text-lg leading-relaxed">
+              專長：全端開發、AI 應用、程式設計與自動化工具。
+            </p>
+
+            <p class="text-lg leading-relaxed">
+              熱愛技術創新與內容分享，喜歡透過程式解決實際問題，目前積極尋找相關領域的發展機會。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能展示 -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          技能與專長
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          我相信「學習力就是開發者最強的能力」。 平時我會透過 GitHub
+          專案閱讀與模仿學習程式架構；在 B站與 YouTube
+          上追蹤開發教學與框架新知，整理成自己的學習筆記與專案實作。
+          這樣的自學習慣，讓我能快速適應新技術與工具，也能在沒有明確教學資源的情況下，自行摸索並完成專案。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 前端開發 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow magic-card card-3d"
+        >
+          <div
+            class="bg-blue-100 dark:bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600 dark:text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            前端開發
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            熟悉 HTML、CSS、JavaScript 等基礎前端技術，能夠獨立開發響應式網頁。
+            掌握 Vue.js 與 Angular 框架，擅長使用 Bootstrap
+            進行快速版面配置，也實作過 Astro 架構的個人網站。 具備 UI/UX
+            意識，開發介面注重使用者體驗與視覺一致性。
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >HTML</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >CSS</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >JavaScript</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Vue3</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Angular</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Bootstrap</span
+            >
+            <span
+              class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Astro</span
+            >
+          </div>
+        </div>
+
+        <!-- 後端開發 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow magic-card card-3d"
+        >
+          <div
+            class="bg-green-100 dark:bg-green-900 w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+          >
+            <svg
+              class="w-6 h-6 text-green-600 dark:text-green-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            後端開發
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            熟悉 Node.js 與 Java（SpringBoot）後端開發，具備 API
+            設計與資料流整合能力。 實際應用於電商平台、LINE
+            Bot、桌面應用等專案，能與前端無縫串接。 了解 Flask 開發流程，並具備
+            MySQL 資料庫設計、查詢與效能優化基礎。
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Node.js</span
+            >
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Java</span
+            >
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >SpringBoot</span
+            >
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Python (Flask)</span
+            >
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >RESTful API</span
+            >
+            <span
+              class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >MySQL</span
+            >
+          </div>
+        </div>
+
+        <!-- AI 與工具 -->
+        <div
+          class="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow magic-card card-3d"
+        >
+          <div
+            class="bg-purple-100 dark:bg-purple-900 w-12 h-12 rounded-lg flex items-center justify-center mb-4"
+          >
+            <svg
+              class="w-6 h-6 text-purple-600 dark:text-purple-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            AI 與工具
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">
+            擅長運用各類 AI 工具協助開發流程，能設計高品質提示詞（Prompt），將
+            ChatGPT、Claude、Perplexity
+            等模型有效應用於生成文案、程式輔助、腳本設計與內容開發。 也熟悉
+            ComfyUI，能進行 AI 圖像工作流程設計與自動化應用。開發上使用 VS Code
+            為主，並掌握 Git/GitHub 進行版本控制與多人協作。
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >ChatGPT</span
+            >
+            <span
+              class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >Cursor</span
+            >
+            <span
+              class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full hover:scale-105 transition-transform duration-200"
+              >ComfyUI</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 經歷時間線 -->
+  <section class="py-16 bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          學習與經歷
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">
+          這裡整理了我的學習歷程與專案經驗，讓你快速認識我的成長與努力。
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- 經歷項目 1 -->
+        <div class="flex">
+          <div
+            class="flex-shrink-0 w-4 h-4 bg-primary-600 rounded-full mt-6 mr-6"
+          >
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 flex-1">
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                開始奮發向上學習以及開發專案
+              </h3>
+              <span
+                class="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0"
+                >2025/6月~持續學習中</span
+              >
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              1.電商平台（Vue + Spring Boot）
+              前後端分離架構，實作商品管理、購物車、會員系統與金流串接功能。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              2.桌面寵物小工具（Python + PySide6）
+              開發互動式桌面寵物程式，支援自訂外觀、動態反饋與輕量資源管理。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              3.桌面待辦清單（Python + Tkinter） 簡易 GUI
+              工具，具備任務管理、優先級標記與資料本地儲存功能。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              4.LeetCode 解題（Python/C++/JavaScript） LeetCode
+              解題紀錄目前尚未開始，但我計劃近期投入並持續更新，歡迎日後回來查看我的學習進度。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              5.銀行即時匯率 LINE Bot（LINE API + Flask + PWA） 整合即時匯率 API
+              與 LINE 訊息推送，搭配 PWA 網頁提供跨平台查詢服務。
+            </p>
+            <p class="text-gray-600 dark:text-gray-300">
+              6.獨立遊戲《幻命之境》（Unity） 使用 Unity 開發 2D
+              橫向卷軸遊戲，實作角色操控、關卡設計與劇情互動系統。
+            </p>
+          </div>
+        </div>
+
+        <!-- 經歷項目 2 -->
+        <div class="flex">
+          <div
+            class="flex-shrink-0 w-4 h-4 bg-primary-600 rounded-full mt-6 mr-6"
+          >
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 flex-1">
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                線上課程與自學
+              </h3>
+              <span
+                class="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0"
+                >2025/5月~持續學習中</span
+              >
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              開始完成多門線上課程（如 Python 資料分析、AI 應用、Python
+              爬蟲），持續精進技術能力中。
+            </p>
+          </div>
+        </div>
+
+        <!-- 經歷項目 3 -->
+        <div class="flex">
+          <div
+            class="flex-shrink-0 w-4 h-4 bg-primary-600 rounded-full mt-6 mr-6"
+          >
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 flex-1">
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                初次了解AI應用的經歷
+              </h3>
+              <span
+                class="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0"
+                >2025~4</span
+              >
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              是因為看了相關教學影片而產生興趣，開始自學並探索AI技術在生活中的應用。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
