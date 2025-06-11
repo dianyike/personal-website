@@ -1,0 +1,14 @@
+# Netlify _redirects file for Astro static site
+
+# Handle form submissions
+/api/contact /thank-you 200
+
+# Ensure trailing slashes work correctly
+/about /about/ 200
+/portfolio /portfolio/ 200
+/notes /notes/ 200
+/recommendations /recommendations/ 200
+/contact /contact/ 200
+
+# 404 fallback
+/* /404.html 404 
